@@ -19,7 +19,7 @@ assuming ``src`` is your main module and your tests are in ``tests/``
 ```bash
 $ pytest --cov=src --cov-branch  tests/
 $ coverage html
-$ python post_coverage_script.py
+$ python coverage_sponge.py
 ```
 
 assumes that
