@@ -1,7 +1,7 @@
 """
 # coverage sponge
 
-document your test coverage progress
+save your test coverage statstics for later
 
 ## The Case
 Coverage offers a great summary inside ``index.html`` after generating
