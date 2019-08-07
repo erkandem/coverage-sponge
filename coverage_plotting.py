@@ -26,7 +26,7 @@ class ModuleSelection:
         obj = self.get_options()
         return self.generate_dropdown(obj)
 
-    def get_sub_module_options(self):
+    def get_submodule_options(self):
         data = self.get_submodules()
         if len(data) > 0:
             data = [[x] for x in data]
@@ -36,7 +36,7 @@ class ModuleSelection:
         return obj
 
     def get_submodule_dropdown(self):
-        obj = self.get_sub_module_options()
+        obj = self.get_submodule_options()
         return self.generate_dropdown(obj)
 
     def select_modules(self) -> str:
@@ -318,7 +318,7 @@ def update_options(selection):
     if selection == 'per Module':
         options = ms.get_options()
     elif selection == 'per Folder':
-        options = ms.get_sub_module_options()
+        options = ms.get_submodule_options()
     else:
         options = fallback_dropdown_options
     return options
