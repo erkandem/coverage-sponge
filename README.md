@@ -8,7 +8,6 @@ after generating html reports. This script takes these records and
 inserts them into a sqlite database.
 
 Later on you could  create (timestamp, coverage rate) plots.
-(Query tool is under construction)
 
 ## Usage
 The idea is to run the script after each successful test run
@@ -30,5 +29,16 @@ assumes that
 things to set:
  1. path to coverage_report
  2. path to database
+
+## Plotting
+Run the viz module if you collected some history of coverage data 
+
+```bash
+$ python coverage_plotting.py
+```
+
+![sample](sample.png)
+> Is he? Is he trying to gamify testing? No! You must not enjoy testing!
+
 
 Different project: https://github.com/openstack/coverage2sql
