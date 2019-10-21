@@ -1,6 +1,6 @@
 # coverage-sponge
 
-save your test coverage statstics for later and plot them.
+save your test coverage progress and plot them interactively.
 
 ## The Case
 ``Coverage`` offers a simple but great summary inside ``index.html``
@@ -34,8 +34,19 @@ Run the viz module if you collected some history of coverage data
 $ python coverage_plotting.py
 ```
 
-![sample](sample.png)
-> Is he? Is he trying to gamify testing? No! You must not enjoy testing!
+![sample](screenshot.png)
+> powered by plotly/dash.
+> but the data from SQL queries can be piped in any of your 
+> favorite plotting library
 
 
-Different project: https://github.com/openstack/coverage2sql
+## final notes
+The two main modules are quite simple.
+Simple to write, debug, extend or modify.
+Of course, there are mature tools which you might integrate into your CI/CD pipeline like 
+ - [codecov.io](https://codecov.io/)
+ - [coveralls.io](https://coveralls.io/)
+
+
+Different project:
+ - [openstack/coverage2sql](https://github.com/openstack/coverage2sql)
